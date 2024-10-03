@@ -54,16 +54,42 @@ while (aa>0){
 
 // ej2
 
-let bb;
-do{
-  bb= prompt(`Ingrese un número mayor a 100`)
-}while(bb<=100)
+// let bb;
+// do{
+//   bb= prompt(`Ingrese un número mayor a 100`)
+// }while(bb<=100)
 
-  console.log(`El número ingresado es mayor a 100: ${bb}`)
+//   console.log(`El número ingresado es mayor a 100: ${bb}`)
 
 // -------------------
 
 // ej1
+
+const esPar =(nroIngresado)=>{
+  if (nroIngresado %2===0){
+    return true
+  }else{
+    return false
+  }
+}
+
+let nroPar = 8
+let nroImpar = 7
+
+console.log(`El número ${nroPar} es par?: ${esPar(nroPar)}`)
+console.log(`El número ${nroImpar} es par?: ${esPar(nroImpar)}`)
+
+// ej2
+
+const converturCelsiusAFarenheit=(grados)=>{
+  let calculo= grados *1.8+32
+  console.log(`${grados}°C son equivalentes a ${calculo}°F`)
+}
+
+let gradosIngresados = prompt("Ingrese los grados en Celsius a convertir")
+converturCelsiusAFarenheit(gradosIngresados)
+
+// ------------------------------------
 
 
 
